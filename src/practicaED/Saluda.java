@@ -14,12 +14,17 @@ public class Saluda {
 		this.nombre = nombre;
 	}
 	
-	public static void main(String[] args) {
-		
+	public void pideNombre() {
 		Scanner teclado = new Scanner(System.in);
 		System.out.println("introduzca nombre");
 		String nombre = teclado.nextLine();
 		System.out.println("hola " + nombre);
+	}
+	
+	public static void main(String[] args) {
+		
+		Saluda sal = new Saluda();
+		sal.pideNombre();
 
 	}
 
